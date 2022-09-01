@@ -6,6 +6,8 @@ Trilium Notes. It borrows heavily from Notion to achieve this.
 [Trilium](https://github.com/zadam/trilium) is a great personal note taking app if you need something more
 powerful than your run-of-the-mill default note taking app out there.
 
+![screenshot](./resources/screenshot.png)
+
 ## Install
 
 To install the theme, take the following steps:

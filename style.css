@@ -2,6 +2,18 @@ html {
     font-size: 87.5%
 }
 
+body.mobile {
+    --tree-font-size: 87.5%;
+}
+
+body.mobile .col-12 {
+    padding-right: 0;
+}
+
+body.mobile .quick-search {
+    border-bottom: 1px solid var(--main-border-color);
+}
+
 body .fancytree-node {
     height: auto;
     padding: 3px;
@@ -54,7 +66,8 @@ body .ck-content ul, body .ck-content ol {
     margin-bottom: 0rem;
 }
 
-body .ck-content ul ul {
+body .ck.ck-content ul ul {
+    margin-top: 0.5em !important;
     padding-left: 1.5em;
 }
 
@@ -70,6 +83,11 @@ body .ck-content hr {
     height: 1px;
     color: rgba(55,53,47, 0.16);
     margin-bottom: 0.5em;
+}
+
+body .ck-content u {
+    text-decoration: none;
+    border-bottom: 0.05em solid;
 }
 
 body .ck-content blockquote {
@@ -116,7 +134,7 @@ body .fancytree-node:not(.fancytree-loading) .fancytree-expander:before {
     content: "\25BA";
     font-size: 100%;
     margin-right: 0.25em;
-    color: rgba(55, 53, 47, 0.5);
+    color: rgba(55, 53, 47, 0.2);
 }
 
 body .fancytree-node.fancytree-expanded .fancytree-expander:before {
@@ -147,6 +165,11 @@ body .tab-row-widget .note-tab .note-tab-wrapper {
 
 body .tab-row-widget .note-tab[active] .note-tab-wrapper {
     background-color: var(--main-background-color);
+}
+
+body .ribbon-tab-container, body .ribbon-button-container {
+    border-top: 1px solid var(--main-border-color); 
+    padding-top: 5px;
 }
 
 body .ck.ck-editor__editable_inline {

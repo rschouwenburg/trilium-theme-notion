@@ -66,7 +66,7 @@ body .ck-content ul, body .ck-content ol {
     margin-bottom: 0rem;
 }
 
-body .ck.ck-content ul ul {
+body .ck.ck-content ul ul, body .ck.ck-content ol ol {
     margin-top: 0.5em !important;
     padding-left: 1.5em;
 }

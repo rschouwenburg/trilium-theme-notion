@@ -14,16 +14,6 @@ body.mobile .quick-search {
     border-bottom: 1px solid var(--main-border-color);
 }
 
-body .fancytree-node {
-    height: auto;
-    padding: 3px;
-    border: 0;
-}
-
-body .fancytree-node .fancytree-custom-icon {
-    padding-top: 3px;
-}
-
 body .note-detail {
     font-size: 114%;
 }
@@ -130,16 +120,7 @@ body .ck-content p code, body .ck-content li code {
 }
 
 body .fancytree-node:not(.fancytree-loading) .fancytree-expander:before {
-    top: 0;
-    content: "\25BA";
-    font-size: 100%;
-    margin-right: 0.25em;
     color: rgba(55, 53, 47, 0.2);
-}
-
-body .fancytree-node.fancytree-expanded .fancytree-expander:before {
-    font-family: 'boxicons' !important;
-    content: "\25BC";
 }
 
 body span.fancytree-node:hover {

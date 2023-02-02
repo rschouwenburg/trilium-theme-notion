@@ -1,11 +1,11 @@
 html {
-    font-size: 87.5%
+    font-size: 100%;
     --main-font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --main-font-size: normal;
+    --main-font-size: 87.5%;
     --tree-font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --tree-font-size: normal;
+    --tree-font-size: 100%;
     --detail-font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --detail-font-size: 87.5%;
+    --detail-font-size: 100%;
     --monospace-font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
@@ -124,6 +124,10 @@ body .ck-content p code, body .ck-content li code {
     font-size: 105%;
     color: #EB5757 !important;
     border-radius: 3px;
+}
+
+body .fancytree-node {
+    height: 30px;
 }
 
 body .fancytree-node:not(.fancytree-loading) .fancytree-expander {

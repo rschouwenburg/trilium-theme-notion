@@ -7,6 +7,8 @@ html {
     --detail-font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --detail-font-size: 100%;
     --monospace-font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+    
+    --launcher-pane-text-color: rgba(25, 23, 17, 0.6);
 }
 
 body.mobile {
@@ -118,6 +120,15 @@ body .ck-content .table {
     margin-bottom: 0.5em;
 }
 
+body .ck-content ul {
+    list-style-type: disc;
+}
+
+body .ck-content ul li::marker {
+    font-size: 1.1em;
+    line-height: 0;
+}
+
 body .ck-content p code, body .ck-content li code {
     background-color: var(--accented-background-color);
     padding: 0.2em 0.4em;
@@ -128,6 +139,8 @@ body .ck-content p code, body .ck-content li code {
 
 body .fancytree-node {
     height: 30px;
+    font-weight: 500;
+    color: rgba(25, 23, 17, 0.6);
 }
 
 body .fancytree-node:not(.fancytree-loading) .fancytree-expander {
@@ -145,11 +158,19 @@ body span.fancytree-node:hover {
 }
 
 .fancytree-custom-icon {
-    padding-top: 3px;
+    padding-top: 7px;
 }
 
 .fancytree-node .fancytree-title {
     margin-left: 4px;
+}
+
+.tree-wrapper .tree-actions {
+    right: 0;
+    width: 100%;
+    border-top: 1px solid rgba(25, 23, 17, 0.1);
+    padding-left: 11.77px;
+    justify-content: flex-start;
 }
 
 body .tab-row-widget {

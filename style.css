@@ -8,7 +8,10 @@ html {
     --detail-font-size: 100%;
     --monospace-font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
     
+    --left-pane-background-color: rgb(251,251,250);
+    --launcher-pane-background-color: rgb(251,251,250);
     --launcher-pane-text-color: rgba(25, 23, 17, 0.6);
+    --active-tab-background-color: rgb(230,230,229);
 }
 
 body.mobile {
@@ -21,6 +24,10 @@ body.mobile .col-12 {
 
 body.mobile .quick-search {
     border-bottom: 1px solid var(--main-border-color);
+}
+
+body .global-menu-button {
+    filter: opacity(0.75);
 }
 
 body .note-detail > div:not(.note-detail-code) {
@@ -182,14 +189,17 @@ body .tab-row-widget {
 
 body .tab-row-widget .note-tab .note-tab-wrapper {
     border-radius: 0;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     margin-right: -5px;
     background-color: var(--active-tab-background-color);
+    border-right: 1px solid white;
 }
 
 body .tab-row-widget .note-tab[active] .note-tab-wrapper {
     background-color: var(--main-background-color);
+}
+
+body .tab-row-widget .note-tab .note-tab-close span {
+    top: -9px;
 }
 
 body .ribbon-tab-container, body .ribbon-button-container {

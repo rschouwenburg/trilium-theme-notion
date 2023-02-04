@@ -30,6 +30,10 @@ body .global-menu-button {
     filter: opacity(0.75);
 }
 
+body .global-menu .dropdown-menu {
+    box-shadow: rgb(15 15 15 / 5%) 0px 0px 0px 1px, rgb(15 15 15 / 10%) 0px 3px 6px, rgb(15 15 15 / 20%) 0px 9px 24px;
+}
+
 body .note-detail > div:not(.note-detail-code) {
     font-size: 114%;
 }
@@ -196,6 +200,11 @@ body .tab-row-widget .note-tab .note-tab-wrapper {
 
 body .tab-row-widget .note-tab[active] .note-tab-wrapper {
     background-color: var(--main-background-color);
+    border-right: 1px solid var(--active-tab-background-color);
+}
+
+body .tab-row-widget .note-tab[active]:hover .note-tab-wrapper {
+    background-color: inherit;
 }
 
 body .tab-row-widget .note-tab .note-tab-close span {

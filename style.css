@@ -9,7 +9,7 @@ html {
     --monospace-font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
     
     --left-pane-background-color: rgb(251,251,250);
-    --launcher-pane-background-color: rgb(251,251,250);
+    --launcher-pane-background-color: var(--active-tab-background-color);
     --launcher-pane-text-color: rgba(25, 23, 17, 0.6);
     --active-tab-background-color: rgb(230,230,229);
 }

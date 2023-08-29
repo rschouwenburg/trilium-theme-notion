@@ -12,6 +12,7 @@ html {
     --launcher-pane-background-color: var(--active-tab-background-color);
     --launcher-pane-text-color: rgba(25, 23, 17, 0.6);
     --active-tab-background-color: rgb(230,230,229);
+    --text-link-color: rgb(210,210,209);
 }
 
 body.mobile {
@@ -73,6 +74,7 @@ body .ck-content p {
 }
 
 body .ck-content ul, body .ck-content ol {
+    margin-top: -0.5em;
     margin-bottom: 0rem;
     line-height: 30px;
 }
@@ -133,6 +135,18 @@ body .ck-content .table {
 }
 
 body .ck-content ul {
+    list-style-type: disc;
+}
+
+body .ck-content ul ul {
+    list-style-type: circle;
+}
+
+body .ck-content ul ul ul {
+    list-style-type: square;
+}
+
+body .ck-content ul ul ul ul {
     list-style-type: disc;
 }
 
@@ -233,7 +247,7 @@ body a.external:not(.no-arrow):after, a[href^="http://"]:not(.no-arrow):after, a
 body .ck-content a, body .ck-content a:visited, body .ck-content a:hover {
     color: var(--muted-text-color);
     text-decoration: none;
-    border-bottom: 1px solid var(--muted-text-color);
+    border-bottom: 1px solid var(--text-link-color);
 }
 
 body .title-row > * {

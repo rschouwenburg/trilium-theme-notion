@@ -232,6 +232,11 @@ body .tab-row-widget .note-tab .note-tab-close span {
 body .ribbon-tab-container, body .ribbon-button-container {
     border-top: 1px solid var(--main-border-color); 
     padding-top: 5px;
+    color: var(--muted-text-color);
+}
+
+body .icon-action {
+    color: var(--muted-text-color);
 }
 
 body .ck.ck-editor__editable_inline {
